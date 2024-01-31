@@ -1,0 +1,28 @@
+﻿{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "emitDeclarationOnly": false,
+    "types": [
+      "jest"
+    ],
+    "rootDir": "../",
+    "outDir": "../out/test",
+    "paths": {
+      "@/*": [
+        "../src/*"
+      ]
+    },
+    "noImplicitAny": false
+  },
+  "include": [
+    "../src/globals/jquery-globals.ts",
+    "../src/globals/jquery.validation-globals.ts",
+    "../src/globals/select2-globals.ts",
+    "../src/ui/widgets/jquerywidgetfn.ts",
+    "./testutil/*.ts",
+    "./**/*.spec.ts",
+    "./**/*.spec.tsx"
+  ],
+  "exclude": []
+}

@@ -1,0 +1,22 @@
+﻿{
+  "extends": "@serenity-is/base/tsconfig.base.json",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "declarationDir": "./out",
+    "rootDir": "./src",
+    "paths": {
+      "@serenity-is/squery": [
+        "./src/globals/squery-module"
+      ],
+      "@mockdeps": [
+        "./src/globals/mockdeps"
+      ],
+    },
+    "outDir": "./out",
+    "target": "ES2017"
+  },
+  "include": [
+    "src",
+    "src/q/services-internal.ts"
+  ]
+}
